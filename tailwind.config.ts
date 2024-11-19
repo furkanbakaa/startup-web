@@ -16,9 +16,9 @@ const config: Config = {
             colors: {
                 primary: {
                     "100": "#FFE8F0",
-                    DEFAULT: "#EE2B69",
+                    DEFAULT: "#05204A",
                 },
-                secondary: "#FBE843",
+                secondary: "#E1E2EF",
                 black: {
                     "100": "#333333",
                     "200": "#141413",
@@ -27,7 +27,11 @@ const config: Config = {
                 },
                 white: {
                     "100": "#F7F7F7",
+                    "200": "#E8E9F3",
                     DEFAULT: "#FFFFFF",
+                },
+                silver: {
+                    DEFAULT:"#BFACAA",
                 },
             },
             fontFamily: {

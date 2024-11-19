@@ -21,11 +21,11 @@ export default async function Home({
     <>
       <section className="pink_container">
         <h1 className="heading">
-          Pitch Your Startup <br /> Connect With Entrepreuners
+        Blog about the cities you visit <br /> Connect With Travelers
         </h1>
 
         <p className="sub-heading !max-w-3xl">
-          Submit Ideas, Vote on Pitches and Get Noticed in Virtula Competitions
+          Submit Experiences, Share with people all around the world
         </p>
 
         <SearchForm query={query} />
@@ -33,7 +33,7 @@ export default async function Home({
 
       <section className="section_container">
         <p className="text-30-semibold">
-          {query ? `Search results for "${query}" ` : "All Startups"}
+          {query ? `Search results for "${query}" ` : "All Blogs"}
         </p>
 
         <ul className="mt-7 card_grid">
@@ -42,7 +42,7 @@ export default async function Home({
               <StartupCard key={post?._id} post={post} />
             ))
           ) : (
-            <p className="no-results"> No startups found</p>
+            <p className="no-results"> No blogs found</p>
           )}
         </ul>
       </section>

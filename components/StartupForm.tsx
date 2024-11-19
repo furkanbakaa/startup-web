@@ -88,7 +88,7 @@ const StartupForm = () => {
           name="title"
           className="startup-form_input"
           required
-          placeholder="Startup Title"
+          placeholder="Blog Title"
         />
 
         {errors.title && <p className="startup-form_error">{errors.title}</p>}
@@ -103,7 +103,7 @@ const StartupForm = () => {
           name="description"
           className="startup-form_textarea"
           required
-          placeholder="Startup Description"
+          placeholder="Blog Description"
         />
 
         {errors.description && (
@@ -113,14 +113,14 @@ const StartupForm = () => {
 
       <div>
         <label htmlFor="category" className="startup-form_label">
-          Category
+          City
         </label>
         <Input
           id="category"
           name="category"
           className="startup-form_input"
           required
-          placeholder="Startup Category (eg. Tech, Education, School etc.)"
+          placeholder="City (eg. Istanbul, Bali, London etc.)"
         />
 
         {errors.category && (
@@ -137,7 +137,7 @@ const StartupForm = () => {
           name="link"
           className="startup-form_input"
           required
-          placeholder="Startup Image URL"
+          placeholder="Blog Image URL"
         />
 
         {errors.link && <p className="startup-form_error">{errors.link}</p>}
@@ -145,7 +145,7 @@ const StartupForm = () => {
 
       <div data-color-mode="light">
         <label htmlFor="pitch" className="startup-form_label">
-          Pitch
+          Experience Details
         </label>
         <MDEditor
           value={pitch}
@@ -156,7 +156,7 @@ const StartupForm = () => {
           style={{ borderRadius: 20, overflow: "hidden" }}
           textareaProps={{
             placeholder:
-              "Briefly describe your idea and what problem it solves",
+              "Briefly describe your experiences",
           }}
           previewOptions={{
             disallowedElements: ["style"],
@@ -171,7 +171,7 @@ const StartupForm = () => {
         className="startup-form_btn text-white"
         disabled={isPending}
       >
-        {isPending ? "Submitting..." : "Submit Your Pitch"}
+        {isPending ? "Submitting..." : "Submit Your Blog"}
         <Send className="size-6 ml-2" />
       </Button>
     </form>
